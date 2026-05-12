@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Academia - PEX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <button id="b1" class="active-btn" onclick="tab('corrida')">Corrida</button>
+      <button id="b2" onclick="tab('agenda')">Personal</button>
+    </nav>
+
+    <div id="sec-corrida" class="card active-card">
+      <h2>Inscrição Corrida</h2>
+      <input type="text" id="c-nome" placeholder="Nome Completo">
+      <input type="email" id="c-email" placeholder="E-mail">
+      <input type="tel" id="c-tel" placeholder="Telefone">
+      <input type="number" id="c-idade" placeholder="Idade">
+      <button id="btn-inscrever" class="main" onclick="inscrever()">Finalizar Inscrição</button>
+      <div id="bibArea"></div>
+    </div>
+
+    <div id="sec-agenda" class="card">
+      <h2>Agendar Aula</h2>
+      <label>Data da aula:</label>
+      <input type="date" id="a-data" onchange="getSlots()">
+      <label>Horários disponíveis:</label>
+      <select id="a-slots"><option>Selecione a data...</option></select>
+      <input type="text" id="a-nome" placeholder="Seu Nome">
+      <input type="text" id="a-cpf" placeholder="Seu CPF">
+      <button id="btn-agendar" class="main" style="background:#007bff" onclick="agendar()">Confirmar Agendamento</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
