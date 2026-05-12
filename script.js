@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyaR8lkNIW3h4ygl5Vh29tRD4t9Ut6iNM7y_DdbuzfHLfBiedPitd10OwnsDgmWtjnBng/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxt9sA6nr7TtpsLtb-UQC6lx1phTmmN5K8NmEiNGDa-4A7M_6PtIKFekVtHt9hilEmAFA/exec";
 
 function tab(t) {
   document.querySelectorAll('.card').forEach(c => c.classList.remove('active-card'));
